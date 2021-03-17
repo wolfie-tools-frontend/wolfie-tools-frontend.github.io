@@ -1,0 +1,12 @@
+//@use './global/theme' with (
+//  $primary-color: blue
+//);
+
+@use 'node_modules/wt-frontend/build/global/wolfie';
+@use 'node_modules/wt-frontend/build/global/components';
+
+body {
+  font-family: wolfie.$font-family;
+  background: wolfie.$background-color;
+  color: wolfie.$text-color;
+}

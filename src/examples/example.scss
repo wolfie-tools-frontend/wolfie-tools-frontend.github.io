@@ -1,0 +1,108 @@
+//@use '../global/wolfie' as *;
+
+body {
+  margin: 0;
+}
+
+.WGridPage {
+  .wrow {
+    .wcol {
+      border: dashed 1px;
+    }
+  }
+}
+
+.WInputPage {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.5rem;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+tr {
+  border: solid #7f9199 1px;
+  border-left: none;
+  border-right: none;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.custom-color {
+  background-color: plum !important;
+  color: indianred !important;
+}
+
+.logo {
+  padding: 0rem;
+  filter: brightness(0) invert(1);
+}
+
+.fancy-buttons > .wbutton {
+  align-self: center;
+  margin: 1rem;
+}
+
+.fancy-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-by-side {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.logo-text {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.definition {
+  font-size: 24px;
+}
+
+.wLmain {
+  padding: 0rem 2rem;
+}
+
+.example-layout-labels {
+  font-size: 24px;
+  font-weight: bold;
+  
+  label{
+    margin-left: 0.3rem;
+    font-size: 14px;
+  }
+}
+
+.code-text {
+  font-family: consolas;
+}
