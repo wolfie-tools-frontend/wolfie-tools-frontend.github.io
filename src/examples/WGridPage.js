@@ -50,20 +50,6 @@ export default function WGridPage() {
             </WRow>
 
             <br />
-            <h2>Example Card Layout</h2>
-            <div style={{ height: '200px', width: '400px', backgroundColor: 'aliceblue', marginLeft: 'auto', marginRight: 'auto' }}>
-                <WRow style={{ height: '100%', columnGap: '0' }}>
-                    <WCol size='4' style={{ margin: '0' }}>image</WCol>
-                    <WCol size='8' style={{ margin: '0' }}>
-                        <WRow style={{ height: '100px' }}>
-                            <WCol size='12' style={{ margin: '0' }}>text block</WCol>
-                        </WRow>
-                        <WRow style={{ height: '100px' }}>
-                            <WCol size='12' style={{ margin: '0' }}>text block</WCol>
-                        </WRow>
-                    </WCol>
-                </WRow>
-            </div>
 
         </div>
     );
