@@ -13,7 +13,7 @@
     "react-scripts": "4.0.3",
     "sass": "^1.32.8",
     "web-vitals": "^1.1.0",
-    "wt-frontend": "^1.2.5"
+    "wt-frontend": "^1.2.15"
   },
   "homepage": "https://wolfie-tools-frontend.github.io/",
   "scripts": {

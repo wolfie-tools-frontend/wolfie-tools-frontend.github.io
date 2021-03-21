@@ -4,7 +4,8 @@ import "./main.scss";
 
 import { Route, HashRouter, Switch, NavLink } from "react-router-dom";
 import AboutPage from "./examples/AboutPage";
-import HomePage from "./examples/HomePage";
+import GettingStartedPage from "./examples/GettingStartedPage";
+import StylizationPage from "./examples/StylizationPage";
 
 import WButtonPage from "./examples/WButtonPage";
 import WNavbarPage from "./examples/WNavbarPage";
@@ -25,7 +26,7 @@ export default function App() {
     <HashRouter basename="/">
       <WLayout wLayout="header-lside">
 
-      <WLHeader>
+        <WLHeader>
           <WNavbar color="colored">
             <ol>
               <li>
@@ -46,11 +47,6 @@ export default function App() {
                 <a>vAlpha</a>
               </WNavItem>
               <WNavItem hoverAnimation="darken" clickAnimation="ripple-light">
-                <NavLink to="/about" id="about" activeClassName="accent">
-                  About
-              </NavLink>
-              </WNavItem>
-              <WNavItem hoverAnimation="darken" clickAnimation="ripple-light">
                 <a href="https://www.npmjs.com/package/wt-frontend" target="_blank">npm</a>
               </WNavItem>
               <WNavItem hoverAnimation="darken" clickAnimation="ripple-light">
@@ -64,49 +60,65 @@ export default function App() {
           <WSidebar color="clear">
             <ol>
               <WNavItem hoverAnimation="darken">
+                <NavLink to="/about" id="about" activeClassName="active-text-primary">
+                  About
+                </NavLink>
+              </WNavItem>
+              <WNavItem hoverAnimation="darken">
+                <NavLink to="/getting-started" id="getting-started" activeClassName="active-text-primary">
+                  Getting Started
+                </NavLink>
+              </WNavItem>
+              <WNavItem hoverAnimation="darken">
+                <NavLink to="/stylization" id="stylization" activeClassName="active-text-primary">
+                  Stylization
+                </NavLink>
+              </WNavItem>
+
+              <WNavItem hoverAnimation="darken">
                 <NavLink to="/waccordion" id="waccordion" activeClassName="active-text-primary">
                   WAccordion
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wbutton" id="wbutton" activeClassName="active-text-primary">
                   WButton
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wcard" id="wcard" activeClassName="active-text-primary">
                   WCard
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wgrid" id="wgrid" activeClassName="active-text-primary">
                   WGrid
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/winput" id="winput" activeClassName="active-text-primary">
                   WInput
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wlayout" id="wlayout" activeClassName="active-text-primary">
                   WLayout
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wmodal" id="wmodal" activeClassName="active-text-primary">
                   WModal
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wnavbar" id="wnavbar" activeClassName="active-text-primary">
                   WNavbar
-                  </NavLink>
+                </NavLink>
               </WNavItem>
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wsidebar" id="wsidebar" activeClassName="active-text-primary">
                   WSidebar
-                  </NavLink>
+                </NavLink>
               </WNavItem>
 
 
@@ -117,17 +129,19 @@ export default function App() {
 
         <WLMain>
 
-            <Route exact path ="/" component={HomePage} />
-            <Route path ="/about" component={AboutPage} />
-            <Route path="/wbutton" component={WButtonPage} />
-            <Route path="/wnavbar" component={WNavbarPage} />
-            <Route path="/winput" component={WInputPage} />
-            <Route path="/wgrid" component={WGridPage} />
-            <Route path="/waccordion" component={WAccordionPage} />
-            <Route path="/wsidebar" component={WSidebarPage} />
-            <Route path="/wlayout" component={WLayoutPage} />
-            <Route path="/wcard" component={WCardPage} />
-            <Route path="/wmodal" component={WModalPage} />
+          <Route exact path="/" component={GettingStartedPage} />
+          <Route path="/about" component={AboutPage} />
+          <Route exact path="/getting-started" component={GettingStartedPage} />
+          <Route path="/stylization" component={StylizationPage} />
+          <Route path="/wbutton" component={WButtonPage} />
+          <Route path="/wnavbar" component={WNavbarPage} />
+          <Route path="/winput" component={WInputPage} />
+          <Route path="/wgrid" component={WGridPage} />
+          <Route path="/waccordion" component={WAccordionPage} />
+          <Route path="/wsidebar" component={WSidebarPage} />
+          <Route path="/wlayout" component={WLayoutPage} />
+          <Route path="/wcard" component={WCardPage} />
+          <Route path="/wmodal" component={WModalPage} />
 
         </WLMain>
 
