@@ -75,11 +75,11 @@ export default function App() {
                 </NavLink>
               </WNavItem>
 
-              <WNavItem hoverAnimation="darken">
+              {/*<WNavItem hoverAnimation="darken">
                 <NavLink to="/waccordion" id="waccordion" activeClassName="active-text-primary">
                   WAccordion
                 </NavLink>
-              </WNavItem>
+              </WNavItem>*/}
               <WNavItem hoverAnimation="darken">
                 <NavLink to="/wbutton" id="wbutton" activeClassName="active-text-primary">
                   WButton
