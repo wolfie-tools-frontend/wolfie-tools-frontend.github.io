@@ -67,6 +67,27 @@ export default function WModalPage() {
                 You are not required to use all the sections in your modals.
             </p>
 
+            <div style={{width: "500px", border: "1px solid #ddd", borderRadius: "0"}}>
+                <WMHeader style={{backgroundColor: "lightcoral"}}>
+                    <b>Modal Header</b>
+                </WMHeader>
+                <WMMain style={{backgroundColor: "ivory"}}>
+                    <b>
+                    Modal Content
+                    <br/>
+                    Modal Content
+                    <br/>
+                    Modal Content
+                    </b>
+                </WMMain>
+                <WMFooter style={{backgroundColor: "lightskyblue"}}>
+                    <b>Modal Footer</b>
+                </WMFooter>
+            </div>
+
+            <p>
+                The following example only has a <code>WMHeader</code> and a <code>WMFooter</code>.
+            </p>
             <WButton onClick={() => setModal1(true)} color="primary">
                 Show
             </WButton>
@@ -125,11 +146,6 @@ export default function WModalPage() {
                     <br />
                     Curabitur placerat justo at quam aliquet fermentum.
                 </WMMain>
-                <WMFooter>
-                    <WButton onClick={() => setModal2(false)}>
-                        Close
-                    </WButton>
-                </WMFooter>
             </WModal>
 
             <p>
@@ -148,11 +164,6 @@ export default function WModalPage() {
     <WMMain>
        // Content goes here
     </WMMain>
-    <WMFooter>
-        <WButton onClick={() => setVisible(false)}>
-            Close
-        </WButton>
-    </WMFooter>
 </WModal>`}
                 </pre>
             </p>
