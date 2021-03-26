@@ -14,6 +14,34 @@ export default function WButtonPage() {
       <div className="definition">Performs an action when clicked.</div>
       <p>On click functionality.</p>
 
+      <h2>Basic Example</h2>
+
+      <WButton color="primary"
+        shape="pill"
+        hoverAnimation="lighten"
+        clickAnimation="ripple-light"
+        onClick={myFunction}>
+          Button
+      </WButton>
+      <p>
+        Code
+        <pre>
+{`function myFunction() {
+  alert("I am an alert box!");
+}
+
+<WButton color="primary"
+         shape="pill"
+         hoverAnimation="lighten"
+         clickAnimation="ripple-light"
+         onClick={myFunction}> Button </WButton>`}
+        </pre>
+      </p>
+
+      <br />
+
+      <p>Below are all the different stylings you can apply to a WButton. There will be a table listing all of the props used to achieve these at the end.</p>
+
       <h2>Types</h2>
       <table>
         <tbody>
@@ -67,6 +95,8 @@ export default function WButtonPage() {
           </tr>
         </tbody>
       </table>
+
+      <hr />
 
       <h2>Shapes</h2>
       <table>
@@ -254,6 +284,8 @@ export default function WButtonPage() {
           </tr>
         </tbody>
       </table>
+
+      <hr />
 
       <h2>Color</h2>
       <table>
@@ -481,6 +513,8 @@ export default function WButtonPage() {
         </tbody>
       </table>
 
+      <hr />
+
       <h2>Size</h2>
       <table>
         <tbody>
@@ -630,6 +664,8 @@ export default function WButtonPage() {
           </tr>
         </tbody>
       </table>
+
+      <hr />
 
       <h2>Icons</h2>
       <table>
@@ -884,6 +920,77 @@ export default function WButtonPage() {
         </tbody>
       </table>
 
+      <br/>
+      <p>
+        In order to place an icon inside a <code>WButton</code>, use the {`<i>`} tag. By default, our API provides <a href="https://material.io/resources/icons/?style=baseline">Google Material Icons</a> for use.
+        Here is the code for the first example in this section:
+        <pre>
+{`<WButton onClick={myFunction}
+         color="primary">
+  <i className="material-icons"> notifications </i>
+</WButton>`}
+        </pre>
+        <br/>
+        To get the different icons sizes and alignments, you must give the icons various classes.  
+      </p>
+      <table>
+        <tr>
+          <th></th>
+          <th>Class Name</th>
+          <th>Value</th>
+        </tr>
+
+        <tr>
+          <td rowSpan={3}>
+            Size
+          </td>
+          <td>small</td>
+          <td>font-size: 1.25rem</td>
+        </tr>
+        <tr>
+          <td>medium</td>
+          <td>font-size: 1.5rem</td>
+        </tr>
+        <tr>
+          <td>large</td>
+          <td>font-size: 2.2rem</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={3}>Alignment</td>
+          <td>left</td>
+          <td>
+            margin-left: -0.25rem
+            <br/>
+            margin-right: 0.5rem
+          </td>
+        </tr>
+        <tr>
+          <td>right</td>
+          <td>
+            margin-left: 0.5rem
+            <br/>
+            margin-right: -0.25rem
+          </td>
+        </tr>
+        <tr>
+          <td>center</td>
+          <td>
+            margin-left: 0.5rem
+            <br/>
+            margin-right: 0.5rem
+          </td>
+        </tr>
+
+        <tr>
+          <td/>
+          <td>disabled</td>
+          <td>color: $disabled-color</td>
+        </tr>
+      </table>
+
+      <hr />
+
       <h2>Animations</h2>
       <h3>Hovers</h3>
       <table>
@@ -1064,6 +1171,8 @@ export default function WButtonPage() {
         </tbody>
       </table>
 
+      <hr />
+
       <h2>Disabled</h2>
       <table>
         <div className="side-by-side">
@@ -1092,6 +1201,8 @@ export default function WButtonPage() {
                 </WButton>
         </div>
       </table>
+
+      <hr />
 
       <h2>Raised</h2>
       <table>
@@ -1125,7 +1236,178 @@ export default function WButtonPage() {
         </div>
       </table>
 
-      <br></br>
+      <hr />
+
+      <h2>Props</h2>
+      <table>
+        <tr>
+          <th>Prop</th>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+
+        <tr>
+          <td rowSpan={4}>wType</td>
+          <td>(default)</td>
+          <td>Solid filled color</td>
+        </tr>
+        <tr>
+          <td>ghost</td>
+          <td>Outlined color</td>
+        </tr>
+        <tr>
+          <td>texted</td>
+          <td>Only text, no border</td>
+        </tr>
+        <tr>
+          <td>transparent</td>
+          <td>Transparent filled color</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={8}>
+            color
+            <br/><br/>
+            Note that transparent<br/><code>wType</code> will have no color
+          </td>
+          <td>(default)</td>
+          <td>No color/White</td>
+        </tr>
+        <tr>
+          <td>(custom)</td>
+          <td>Passing in your own class with color styling to a (default) color <code>WButton</code></td>
+        </tr>
+        <tr>
+          <td>primary</td>
+          <td>Theme's primary color</td>
+        </tr>
+        <tr>
+          <td>accent</td>
+          <td>Theme's accent color</td>
+        </tr>
+        <tr>
+          <td>colored</td>
+          <td>Theme's button-background-color and button-text color</td>
+        </tr>
+        <tr>
+          <td>success</td>
+          <td>Green</td>
+        </tr>
+        <tr>
+          <td>danger</td>
+          <td>Red</td>
+        </tr>
+        <tr>
+          <td>warning</td>
+          <td>Yellow</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={5}>shape</td>
+          <td>(default)</td>
+          <td>Sharp corners</td>
+        </tr>
+        <tr>
+          <td>rounded</td>
+          <td>Slightly rounded corners</td>
+        </tr>
+        <tr>
+          <td>pill</td>
+          <td>Fully rounded corners</td>
+        </tr>
+        <tr>
+          <td>circle</td>
+          <td>Circle, intended for single icons</td>
+        </tr>
+        <tr>
+          <td>square</td>
+          <td>Square, intended for single icons</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={4}>size</td>
+          <td>(default)</td>
+          <td>Medium size</td>
+        </tr>
+        <tr>
+          <td>small</td>
+          <td>0.9rem</td>
+        </tr>
+        <tr>
+          <td>medium</td>
+          <td>1rem</td>
+        </tr>
+        <tr>
+          <td>large</td>
+          <td>1.25rem</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={2}>span</td>
+          <td>(default)</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>true</td>
+          <td>Size extends to width of parent container</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={4}>hoverAnimation</td>
+          <td>(default)</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>darken</td>
+          <td>Background/text darkens on hover<br/>(more apparent on lighter backgrounds)</td>
+        </tr>
+        <tr>
+          <td>lighten</td>
+          <td>Background/text lightens on hover<br/>(more apparent on darker backgrounds)</td>
+        </tr>
+        <tr>
+          <td>fill</td>
+          <td>For ghost <code>wType</code>, fills the background to be solid</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={3}>clickAnimation</td>
+          <td>(default)</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>ripple-dark</td>
+          <td>Creates a dark ripple across the button<br/>(works better on lighter buttons)</td>
+        </tr>
+        <tr>
+          <td>ripple-light</td>
+          <td>Creates a light ripple across the button<br/>(works better on darker buttons)</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={2}>raised</td>
+          <td>(default)</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>True</td>
+          <td>Provides small shadow for depth</td>
+        </tr>
+
+        <tr>
+          <td rowSpan={2}>disabled</td>
+          <td>(default)</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>True</td>
+          <td>Provides styling that makes the button look disabled(greyed out)</td>
+        </tr>
+
+        <tr></tr>
+      </table>
+
+      <br />
 
     </div >
   );

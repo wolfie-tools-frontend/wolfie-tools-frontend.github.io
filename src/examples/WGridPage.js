@@ -111,7 +111,7 @@ export default function WGridPage() {
                     <td rowSpan={2}>
                         size
                         <br/>
-                        <code>WCol</code> only
+                        (<code>WCol</code> only)
                     </td>
                     <td>(default)</td>
                     <td>The column spans 1 unit of the row</td>
