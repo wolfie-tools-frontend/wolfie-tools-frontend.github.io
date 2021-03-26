@@ -28,6 +28,8 @@ clickAnimation="ripple-light"
 `}
             </pre>
 
+            <hr/>
+
             <h2>Dart Sass Syntax</h2>
             <p>
                 <a href="https://sass-lang.com/">Sass</a> is “CSS with superpowers”. It has more features and modularity than what CSS provides. You can define and use variables, functions and mixins.
@@ -55,6 +57,8 @@ clickAnimation="ripple-light"
                 This works because all props unspecified by our code are gathered into a single array using the “...other”. This is called the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters">rest parameter syntax.</a>
             </p>
 
+            <hr/>
+
             <h2>Globals</h2>
             <p>
                 <code>@use 'node_modules/wt-frontend/build/global/wolfie';</code>
@@ -65,7 +69,20 @@ clickAnimation="ripple-light"
 
                 <h3>Global Colors:</h3>
                 Preset color classes (success, warning, danger) will also change the text color, not just the background color of a component.
+
+                <h3>Animations</h3>
+            <p>
+                Animations readily available for users to call on or pass as a prop for any element. Animations are also used for Wolfie Tools Front-End API components.
+                <br></br>
+                The list of mixins you can use: <a href="https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss">https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss</a>
+                <br></br>
+                <h4>Custom Animations:</h4>
+                You may create your own animations from scratch or use existing ones provided by this API.
+                <br></br>Note: transparent-dark, transparent-light, transparent-colored: are typically only used by ghost and texted buttons
             </p>
+            </p>
+
+            <hr/>
 
             <h2>Themes</h2>
             <p>
@@ -83,17 +100,6 @@ clickAnimation="ripple-light"
             </p>
             <h3>Theme Variables</h3>
             <p>The list of variables names you can change: <a href="https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_theme.scss">https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_theme.scss</a></p>
-
-            <h3>Animations</h3>
-            <p>
-                Animations readily available for users to call on or pass as a prop for any element. Animations are also used for Wolfie Tools Front-End API components.
-                <br></br>
-                The list of mixins you can use: <a href="https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss">https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss</a>
-                <br></br>
-                <h4>Custom Animations:</h4>
-                You may create your own animations from scratch or use existing ones provided by this API.
-                <br></br>Note: transparent-dark, transparent-light, transparent-colored: are typically only used by ghost and texted buttons
-            </p>
 
             <h3>Icons</h3>
             <p>
