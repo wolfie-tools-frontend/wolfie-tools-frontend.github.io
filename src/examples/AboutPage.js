@@ -25,9 +25,9 @@ export default function WAboutPage() {
             </ul>
 
             <h3>Team Members</h3>
-            <p>Cynthia Lee - Team Leader, Programmer <a href="https://www.linkedin.com/in/cyn-lee/" target="_blank">(LinkedIn)</a> <a href="https://github.com/Cynthia-Lee" target="_blank">(Github)</a></p>
-            <p>Andrea Lee - Programmer <a href="https://www.linkedin.com/in/and-lee/" target="_blank">(LinkedIn)</a> <a href="https://github.com/and-lee" target="_blank">(Github)</a></p>
-            <p>Karen Huang - Programmer <a href="https://github.com/khuang428" target="_blank">(Github)</a></p>
+            <p>Cynthia Lee - Team Leader, Frontend Developer <a href="https://www.linkedin.com/in/cyn-lee/" target="_blank">(LinkedIn)</a> <a href="https://github.com/Cynthia-Lee" target="_blank">(Github)</a></p>
+            <p>Andrea Lee - Frontend Developer <a href="https://www.linkedin.com/in/and-lee/" target="_blank">(LinkedIn)</a> <a href="https://github.com/and-lee" target="_blank">(Github)</a></p>
+            <p>Karen Huang - Frontend Developer <a href="https://github.com/khuang428" target="_blank">(Github)</a></p>
 
             <h2>Vertically Integrated Projects</h2>
             <p>This frontend API is part of Professor McKenna's Vertically Integrated Projects (VIP) research group at Stony Brook University.</p>
