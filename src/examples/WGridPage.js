@@ -10,7 +10,7 @@ export default function WGridPage() {
             <h1>WGrid</h1>
             <div className="definition">Organize the view.</div>
             <p>
-                <code>WGrid</code> is split into 2 components: <code>WRow</code> and <code>WCol</code>. <code>WRow</code> and <code>WCol</code> utilize <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Grids</a>.You should use CSS Grid properties with <code>WRow</code> and <code>WCol</code>.
+                <code>WGrid</code> is split into 2 components: <code>WRow</code> and <code>WCol</code>. <code>WRow</code> and <code>WCol</code> utilize <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Grids</a>.You should use CSS Grid properties with <code>WRow</code> and <code>WCol</code>.
             </p>
 
             <p>

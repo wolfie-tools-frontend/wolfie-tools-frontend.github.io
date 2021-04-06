@@ -922,7 +922,7 @@ export default function WButtonPage() {
 
       <br/>
       <p>
-        In order to place an icon inside a <code>WButton</code>, use the {`<i>`} tag. By default, our API provides <a href="https://material.io/resources/icons/?style=baseline">Google Material Icons</a> for use.
+        In order to place an icon inside a <code>WButton</code>, use the {`<i>`} tag. By default, our API provides <a href="https://material.io/resources/icons/?style=baseline" target="_blank">Google Material Icons</a> for use.
         Here is the code for the first example in this section:
         <pre>
 {`<WButton onClick={myFunction}

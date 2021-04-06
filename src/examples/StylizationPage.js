@@ -8,7 +8,7 @@ export default function WStylizationPage() {
             <h1>Stylization</h1>
 
             <h2>React Syntax</h2>
-            <p>Wolfie Tools Front-End API’s React Components can be called with: </p>
+            <p>Wolfie Tools Frontend API’s React Components can be called with: </p>
             <code>{`<WComponentName>{children}</WComponentName>`}</code>
             <p>Wolfie Components uses defined props that apply styled classes.</p>
 
@@ -32,7 +32,7 @@ clickAnimation="ripple-light"
 
             <h2>Dart Sass Syntax</h2>
             <p>
-                <a href="https://sass-lang.com/">Sass</a> is “CSS with superpowers”. It has more features and modularity than what CSS provides. You can define and use variables, functions and mixins.
+                <a href="https://sass-lang.com/" target="_blank">Sass</a> is “CSS with superpowers”. It has more features and modularity than what CSS provides. You can define and use variables, functions and mixins.
                 SCSS variables are stylization variables that can be called on. They begin with a “$” followed by the variable name. $variable
             </p>
 
@@ -42,8 +42,8 @@ clickAnimation="ripple-light"
             <p>If you installed our API in a different location, change the URL to the location where you installed it. Be sure to import your Sass file into your React app.</p>
 
             <p>
-                Wolfie Tools Front-End API utilizes @use for it’s theming. <a href="https://sass-lang.com/documentation/at-rules/use">Read more about how @use here.</a>
-                <br></br><a href="https://sass-lang.com/blog/the-module-system-is-launched">In this front-end API, we will be using “@use” as “@import” is deprecated.</a>
+                Wolfie Tools Frontend API utilizes @use for it’s theming. <a href="https://sass-lang.com/documentation/at-rules/use" target="_blank">Read more about how @use here.</a>
+                <br></br><a href="https://sass-lang.com/blog/the-module-system-is-launched" target="_blank">In this frontend API, we will be using “@use” as “@import” is deprecated.</a>
             </p>
 
             <h2>HTML Attributes</h2>
@@ -54,7 +54,7 @@ clickAnimation="ripple-light"
                 Example:
                 <br></br><code>{`children, className, onClick, style, wType, shape, color, size, span, hoverAnimation, clickAnimation, value, disabled, shadow, ...other`}</code>
                 <br></br>Here are the props for our WButton component, which is a wrapper around the HTML {`<button>`} tag. One HTML attribute for {`<button>`} that is not explicitly listed here is “name”.
-                This works because all props unspecified by our code are gathered into a single array using the “...other”. This is called the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters">rest parameter syntax.</a>
+                This works because all props unspecified by our code are gathered into a single array using the “...other”. This is called the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters" target="_blank">rest parameter syntax.</a>
             </p>
 
             <hr/>
@@ -72,9 +72,9 @@ clickAnimation="ripple-light"
 
                 <h3>Animations</h3>
             <p>
-                Animations readily available for users to call on or pass as a prop for any element. Animations are also used for Wolfie Tools Front-End API components.
+                Animations readily available for users to call on or pass as a prop for any element. Animations are also used for Wolfie Tools Frontend API components.
                 <br></br>
-                The list of mixins you can use: <a href="https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss">https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss</a>
+                The list of mixins you can use: <a href="https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss" target="_blank">https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_animations.scss</a>
                 <br></br>
                 <h4>Custom Animations:</h4>
                 You may create your own animations from scratch or use existing ones provided by this API.
@@ -99,11 +99,11 @@ clickAnimation="ripple-light"
                 </pre>
             </p>
             <h3>Theme Variables</h3>
-            <p>The list of variables names you can change: <a href="https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_theme.scss">https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_theme.scss</a></p>
+            <p>The list of variables names you can change: <a href="https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_theme.scss" target="_blank">https://github.com/wolfie-tools-frontend/wolfie-tools-frontend-api/blob/master/src/global/_theme.scss</a></p>
 
             <h3>Icons</h3>
             <p>
-                Wolfie Tools Front-End API’s Default Icon library: <a href="https://material.io/resources/icons/?style=baseline">Google Material Icons</a>
+                Wolfie Tools Frontend API’s Default Icon library: <a href="https://material.io/resources/icons/?style=baseline" target="_blank">Google Material Icons</a>
             </p>
 
         </div>

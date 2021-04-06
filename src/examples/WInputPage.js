@@ -13,6 +13,28 @@ export default function WInputPage() {
       <h2>Default</h2>
       <WInput></WInput>
 
+      <br/>
+
+      <h2>Basic Example</h2>
+      <WInput wType="outlined"
+        placeholderText="WInput Example"
+        barAnimation="border-highlight"
+        hoverAnimation="solid"
+      />
+
+      <p>
+        Code
+        <pre>
+{`<WInput wType="outlined"
+       placeholderText="WInput Example"
+       barAnimation="border-highlight"
+       hoverAnimation="solid"
+/>`}
+        </pre>
+      </p>
+
+      <hr />
+
       <h2>Lined</h2>
       <h3>Default</h3>
       <WInput wType="lined"></WInput>
@@ -271,7 +293,7 @@ export default function WInputPage() {
       >
       </WInput>
 
-      <br/>
+      <br />
 
     </div>
   );

@@ -21,10 +21,10 @@ export default function WGettingStartedPage() {
             </ol>
             <h3>Technologies Needed</h3>
             <ul>
-                <li><a href="https://nodejs.org/en/">Node.js</a></li>
-                <li><a href="https://reactjs.org/">React</a></li>
-                <li><a href="https://reactrouter.com/web/guides/quick-start">react-router-dom</a></li>
-                <li><a href="https://sass-lang.com/dart-sass">Dart Sass</a></li>
+                <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+                <li><a href="https://reactrouter.com/web/guides/quick-start" target="_blank">react-router-dom</a></li>
+                <li><a href="https://sass-lang.com/dart-sass" target="_blank">Dart Sass</a></li>
             </ul>
 
         </div>
